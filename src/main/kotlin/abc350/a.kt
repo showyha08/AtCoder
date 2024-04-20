@@ -5,7 +5,7 @@ package abc350
 fun main() {
     val s = readln()
     val i = s.takeLast(3).toInt()
-    if (i != 316 && 0 <= i && i < 350) {
+    if (i != 316 && i in 1 until 350) {
         print("Yes")
         return
     }
