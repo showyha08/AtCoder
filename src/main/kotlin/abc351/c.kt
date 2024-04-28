@@ -1,27 +1,20 @@
 package abc351
 
+// 学び：配列内の途中要素削除だと時間がかかる、末尾の追加や削除は時間がかからないO(1)
+
 fun main() {
-    val n = readln().toInt()
+    readln().toInt()
     val a = readln().split(" ").map { it.toInt() }.toMutableList()
-    repeat(n) {
-        for (i in 0 until a.size -1) {
-            if (a[i] == a[i + 1]) {
-                val t = a[i] + 1
-                a.removeAt(i)
-                a.removeAt(i)
-                a.add(i, t)
-                break
-            }
-        }
-        if( a.size == 1 ){
-            print(1)
-            return
-        }
-        if( a[0]!=a[1] ){
-            print(a.size)
-            return
+    val arr = ArrayDeque(listOf<Int>())
+    for (i in a.indices) {
+        arr.add(a[i])
+        while (arr.size > 1 && arr[arr.lastIndex] == arr[arr.lastIndex-1]) {
+            val t = arr.last() + 1
+            arr.removeLast()
+            arr.removeLast()
+            arr.add(t)
         }
     }
-    print(a.size)
+    print(arr.size)
 }
 
