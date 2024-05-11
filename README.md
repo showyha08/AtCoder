@@ -19,3 +19,7 @@ https://kenkoooo.com/atcoder/#/table/
 
 レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【中級編：目指せ水色コーダー！】
 https://qiita.com/e869120/items/eb50fdaece12be418faa
+
+## 理解したい用語
+- [ ] スライド最小値
+- [ ] Deque
