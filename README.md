@@ -23,3 +23,5 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa
 ## 理解したい用語
 - [ ] スライド最小値
 - [ ] Deque
+- [ ] 尺取り法
+  - [Qiita しゃくとり法 (尺取り法) の解説と、それを用いる問題のまとめ](https://qiita.com/drken/items/ecd1a472d3a0e7db8dce)

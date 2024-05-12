@@ -1,4 +1,4 @@
-package abc352
+package abc353
 
 // https://atcoder.jp/contests/abc352/tasks/abc352_a
 fun main() {
