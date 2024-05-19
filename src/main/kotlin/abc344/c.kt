@@ -1,5 +1,6 @@
 package abc344
 
+// WA 解説みながら解いた
 fun main() {
     val n = readln()
     val a = readln().split(" ").map { it.toInt() }
