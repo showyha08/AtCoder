@@ -6,6 +6,10 @@ https://atcoder.jp/users/showyha?contestType=algo
 ## コンテスト実績 Algorithm Rating分布
 2024/04/13 93860th
 2024/04/20 78927th
+2024/05/17 56096th
+
+## 便利
+https://www.dropbox.com/sh/nx3tnilzqz7df8a/AAAYlTq2tiEHl5hsESw6-yfLa?e=1&dl=0
 
 ## 茶色を目指す
 https://atcoder.jp/contests/APG4b
