@@ -3,43 +3,38 @@ package abc356
 //WA bit全探索 問題
 fun main() {
     val (n, m, k) = readln().split(" ").map { it.toInt() }
-    val rows = 15
-    val cols = 15
-    val alist: MutableList<List<String>> = MutableList(rows) {
-        MutableList(cols) { "" }
-    }
+    val pattern = 1 shl n
+    val pList = mutableListOf<Pair<Int, Boolean>>()
     repeat(m) {
-        alist.add(readln().split(" "))
-    }
+        val a = readln().split(" ")
+        pList.add(
+            Pair(
+                // bitで考える
+                a.subList(1, a.size - 1).map { 1 shl (it.toInt() - 1) }.sum(),
+                a.last() == "o"
+            )
+        )
 
-    var total1 = n
-    var i = n - 1
-    repeat(k) {
-        total1 = total1 * (i - it)
     }
-    var total2 = k
-    var j = k - 1
-    repeat(k) {
-        total2 = total2 * (j - it)
-    }
-
-    var total = total1 / total2
-
-    var min = 16
-    for (a in alist) {
-        if (a.first().toInt() < k)
-            continue
-        if (a.last().toInt() > k && a.last() == "x") {
-            print(0)
-            return
+    var ans = 0
+    for (i in 0 until pattern) {
+        var ok = true
+        for (p in pList) {
+            if (p.second) {
+                // oの場合 andでk以上ならOK、逆ならng
+                if ((p.first and i).countOneBits() < k) {
+                    ok = false
+                    break
+                }
+            } else {
+                // xの場合 andで同じ数を維持しているなら除外
+                if ((p.first and i).countOneBits() >= k) {
+                    ok = false
+                    break
+                }
+            }
         }
-        if (k == a[0].toInt() && a[a.size - 1] == "o"){
-            print(0)
-            return
-        }
-        if (k <= a[0].toInt() && a[0].toInt() < min ){
-            min = a[0].toInt()
-        }
+        if (ok) ans++
     }
-
+    println(ans)
 }
