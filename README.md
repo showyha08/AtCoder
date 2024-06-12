@@ -24,6 +24,9 @@ https://kenkoooo.com/atcoder/#/table/
 レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【中級編：目指せ水色コーダー！】
 https://qiita.com/e869120/items/eb50fdaece12be418faa
 
+## 覚えておく
+- [ ] Intの最大 2,147,483,647 (10ケタ)
+
 ## 理解したい用語
 - [ ] BFS
 - [ ] Bit全探索
@@ -41,4 +44,4 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa
   - https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9E%E3%83%B3%E9%96%A2%E6%95%B0
 - [ ] バケットソート
   - https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%B1%E3%83%83%E3%83%88%E3%82%BD%E3%83%BC%E3%83%88
-  - 
+- [ ] 線型計画問題
