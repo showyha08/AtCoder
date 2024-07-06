@@ -1,0 +1,5 @@
+package typicalAlgorithm
+
+fun main() {
+
+}
